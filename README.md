@@ -9,11 +9,11 @@ This repository documents my daily learning and practice as I work towards maste
 - Microsoft Fabric
 - Data Modeling
 - System Design
-
+  
 ## Rule
 At least one meaningful update every day:
 - Notes
-- Queries
+- Queries 
 - Explanations
 
 This is a learning-by-building journey.
