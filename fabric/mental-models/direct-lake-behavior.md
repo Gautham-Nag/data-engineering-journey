@@ -8,3 +8,4 @@
 
 Rule:
 Direct Lake tries first, correctness beats speed.
+
