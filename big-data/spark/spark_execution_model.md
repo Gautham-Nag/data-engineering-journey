@@ -29,7 +29,7 @@ Spark separates planning from execution using distinct components:
   Executors are long-lived processes that run tasks, store intermediate data,
   and perform computation in parallel.
 
-- **Partitions**  
+- **Partitions**
   Data is divided into partitions. A partition is the smallest unit of data
   processed independently.
 
