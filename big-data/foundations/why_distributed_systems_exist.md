@@ -5,8 +5,8 @@ and failures are rare. As data volume, velocity, and complexity grow,
 these assumptions break down.
 
 ## The core problem
-Single-machine systems face hard limits:
-- Finite memory and CPU
+Single-machine systems face hard limits: 
+- Finite memory and CPU 
 - Expensive vertical scaling
 - Fragile recovery when failures occur
 
