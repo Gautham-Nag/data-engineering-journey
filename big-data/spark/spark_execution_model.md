@@ -11,7 +11,7 @@ execution plan that can run in parallel across machines.
 Most performance and correctness issues in Spark do not come from syntax errors,
 but from misunderstanding how Spark executes work.
 
-A clear execution model allows engineers to:
+A clear execution model allows engineers to: 
 - Predict when shuffles occur
 - Understand parallelism limits
 - Reason about failures and recomputation
