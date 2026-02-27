@@ -15,7 +15,7 @@ This file demonstrates:
 - how mixed string/numeric conditions behave
 
 No functions. No classes.
-Only execution behavior.
+Only execution behavior. 
 """
 
 # ------------------------------------------------------------
