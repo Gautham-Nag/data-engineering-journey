@@ -153,6 +153,7 @@ This Nanodegree served as the foundation for the **AWS Certified Data Engineer â
 - Domain 4: Data Security and Governance (18%)
 
 **Verify Nanodegree:** https://www.udacity.com/certificate/e/d858f7be-a5f2-11f1-b3da-6356633ccbdb
+** Verify AWS Certified Data Engineer - Associate (DEA-C01) ** https://www.credly.com/badges/3ac1a894-590d-4b4e-a10e-cb74bad54319/public_url
 
 ---
 
