@@ -1,0 +1,24 @@
+warning: `VIRTUAL_ENV=/voc/data/venvs/project/starter` does not match the project environment path `.venv` and will be ignored; use `--active` to target the active environment instead
+Evaluating run_text_moderation ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 0:00:00
+                                                                                   Evaluation Summary: run_text_moderation                                                                                   
+┏━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━┓
+┃ Case ID           ┃ Inputs                                                                              ┃ Outputs                                                                            ┃ Assertions ┃
+┡━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━┩
+│ professional_text │ [TextInput(text_file='/voc/work/code/project/starter/evals/test_data/professional_t │ rationale='The message is friendly and professional. It offers help and directs    │ ✔✔✔✔       │
+│                   │ ext.txt')]                                                                          │ the customer to resources available on the company portal. No PII was detected.'   │            │
+│                   │                                                                                     │ contains_pii=False is_unfriendly=False is_unprofessional=False                     │            │
+├───────────────────┼─────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┼────────────┤
+│ text_with_pii     │ [TextInput(text_file='/voc/work/code/project/starter/evals/test_data/text_with_pii. │ rationale="The message contains the customer's full name, new shipping address,    │ ✔✔✔✔       │
+│                   │ txt')]                                                                              │ email address, phone number, and account number. This is personally-identifiable   │            │
+│                   │                                                                                     │ information (PII)." contains_pii=True is_unfriendly=False is_unprofessional=False  │            │
+├───────────────────┼─────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┼────────────┤
+│ unfriendly_text   │ [TextInput(text_file='/voc/work/code/project/starter/evals/test_data/unfriendly_tex │ rationale='The customer service representative\'s message exhibits a highly        │ ✔✔✔✔       │
+│                   │ t.txt')]                                                                            │ unprofessional and unfriendly tone. The use of "Seriously??" and "that\'s your     │            │
+│                   │                                                                                     │ problem" is dismissive and lacks empathy. The representative also accuses the      │            │
+│                   │                                                                                     │ customer of "wasting my time" and suggests the customer isn\'t reading             │            │
+│                   │                                                                                     │ instructions, which is condescending and unprofessional. There is no Personally    │            │
+│                   │                                                                                     │ Identifiable Information (PII) in the message.' contains_pii=False                 │            │
+│                   │                                                                                     │ is_unfriendly=True is_unprofessional=True                                          │            │
+├───────────────────┼─────────────────────────────────────────────────────────────────────────────────────┼────────────────────────────────────────────────────────────────────────────────────┼────────────┤
+│ Averages          │                                                                                     │                                                                                    │ 100.0% ✔   │
+└───────────────────┴─────────────────────────────────────────────────────────────────────────────────────┴────────────────────────────────────────────────────────────────────────────────────┴────────────┘
