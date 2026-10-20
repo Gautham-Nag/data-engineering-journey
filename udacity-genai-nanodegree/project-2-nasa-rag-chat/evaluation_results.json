@@ -1,0 +1,134 @@
+{
+  "per_question": [
+    {
+      "category": "overview",
+      "mission": "apollo_11",
+      "question": "What was the main goal of the Apollo 11 mission?",
+      "expected": "Apollo 11's goal was to land astronauts on the Moon and return them safely to Earth. Neil Armstrong and Buzz Aldrin landed on the Moon on July 20, 1969, while Michael Collins stayed in lunar orbit in the command module.",
+      "answer": "The main goal of the Apollo 11 mission was to land men on the lunar surface and return them safely to Earth. (Source 2)",
+      "scores": {
+        "faithfulness": 1.0,
+        "response_relevancy": 0.999999608409091,
+        "context_precision": 0.9999999999666667,
+        "bleu_score": 0.2535177909243834,
+        "rouge_score": 0.39999999999999997
+      }
+    },
+    {
+      "category": "emergency",
+      "mission": "apollo_13",
+      "question": "What emergency happened during the Apollo 13 mission?",
+      "expected": "About 56 hours into the flight, an oxygen tank in the service module exploded, causing a loss of oxygen and electrical power. The Moon landing was cancelled and the crew used the lunar module Aquarius as a lifeboat to return safely to Earth.",
+      "answer": "During the Apollo 13 mission, the super critical helium Burst-Disk ruptured at about 108 hours, 54 minutes, 40 seconds after reaching a pressure of 1937 pounds per square inch. Lovell reported seeing particles coming off and the pressure of the escaping gas. This was thought to be a non-propulsive vent but turned out to be a critical issue. The burst disk is in the tank to prevent pressure from going above levels the tank can withstand. If the disk had failed to rupture, there was a backup procedure in place (Source 1, Source 3).",
+      "scores": {
+        "faithfulness": 1.0,
+        "response_relevancy": 0.5526528808973531,
+        "context_precision": 0.9999999999666667,
+        "bleu_score": 0.01886782264636293,
+        "rouge_score": 0.15827338129496404
+      }
+    },
+    {
+      "category": "disaster analysis",
+      "mission": "challenger",
+      "question": "What caused the Space Shuttle Challenger disaster?",
+      "expected": "The O-ring seals in a joint of the right solid rocket booster failed, made worse by unusually cold temperatures at launch. Hot gas escaped through the joint and the vehicle broke apart about 73 seconds after liftoff on January 28, 1986.",
+      "answer": "Based on the provided NASA archive documents, the Space Shuttle Challenger disaster was caused by a major malfunction that led to the explosion of the vehicle. The malfunction occurred approximately 1 minute and a half after launch from the Kennedy Space Center. The disaster resulted in the loss of the Challenger crew, including Commander Francis Dick Scobie, Pilot Michael J Smith, Mission Specialist Doctor Judy Resnick, Ellison Onazuka, Doctor Ronald McNair, and Payload Specialists Kristen McAuliffe and Greg Jarvis. The exact details of the malfunction and its causes were not explicitly mentioned in the provided excerpts (Sources 1, 2, 3).",
+      "scores": {
+        "faithfulness": 1.0,
+        "response_relevancy": 0.8674198658547599,
+        "context_precision": 0.49999999995,
+        "bleu_score": 0.04668049023095242,
+        "rouge_score": 0.11267605633802817
+      }
+    },
+    {
+      "category": "crew",
+      "mission": "apollo_13",
+      "question": "Who were the crew members of Apollo 13?",
+      "expected": "The Apollo 13 crew was Commander Jim Lovell, Command Module Pilot Jack Swigert, and Lunar Module Pilot Fred Haise.",
+      "answer": "The crew members of Apollo 13 were:\n- Commander James A. (Jim) Lovell, Jr. (CDR) [Source 2]\n- Command Module Pilot John L. (Jack) Swigert, Jr. (CMP) [Source 2]\n- Lunar Module Pilot Fred W. Haise, Jr. (LMP) [Source 2]",
+      "scores": {
+        "faithfulness": 0.0,
+        "response_relevancy": 0.9999995195443373,
+        "context_precision": 0.5833333333041666,
+        "bleu_score": 0.037012960685629065,
+        "rouge_score": 0.5714285714285715
+      }
+    },
+    {
+      "category": "technical",
+      "mission": "apollo_13",
+      "question": "How did the Apollo 13 crew deal with rising carbon dioxide levels in the lunar module?",
+      "expected": "Mission Control designed a way to fit the command module's square lithium hydroxide canisters into the lunar module's system using materials on board such as tape, plastic bags and cardboard, which brought carbon dioxide levels back down.",
+      "answer": "The Apollo 13 crew dealt with rising carbon dioxide levels in the lunar module by implementing a procedure to keep tabs on the rising CO2 level and changing to the backup lithium hydroxide canister when the level reached 15 millimeters of mercury - partial pressure. The surgeon recommended using the onboard reading for this indication, as it was considered somewhat more accurate. At the time of the report, the level of CO2 was at about 13. (Source 1)",
+      "scores": {
+        "faithfulness": 1.0,
+        "response_relevancy": 1.0,
+        "context_precision": 0.9999999999666667,
+        "bleu_score": 0.05089874525901569,
+        "rouge_score": 0.17241379310344826
+      }
+    },
+    {
+      "category": "timeline",
+      "mission": "apollo_11",
+      "question": "When did Apollo 11 land on the Moon, and when did Neil Armstrong step onto the surface?",
+      "expected": "The lunar module Eagle landed on July 20, 1969, and Neil Armstrong stepped onto the lunar surface about six and a half hours after landing.",
+      "answer": "Apollo 11 landed on the Moon on July 20, 1969. Neil Armstrong stepped onto the lunar surface approximately 6 hours after landing. (Source 2)",
+      "scores": {
+        "faithfulness": 0.5,
+        "response_relevancy": 0.7794875612926169,
+        "context_precision": 0.9999999999666667,
+        "bleu_score": 0.08603816655921585,
+        "rouge_score": 0.6122448979591836
+      }
+    },
+    {
+      "category": "timeline",
+      "mission": "challenger",
+      "question": "How long after liftoff did the Challenger vehicle break apart?",
+      "expected": "The Challenger vehicle broke apart about 73 seconds after liftoff.",
+      "answer": "The Challenger vehicle broke apart approximately 73 seconds after liftoff. This is indicated by the statement \"At 11:40 a.m. this morning space program experience a national tragedy with the explosion of the Space Shuttle Challenger approximately 1 minute and a half after launch\" (Source 2).",
+      "scores": {
+        "faithfulness": 0.5,
+        "response_relevancy": 0.8920219273005783,
+        "context_precision": 0.9999999999666667,
+        "bleu_score": 0.5954165059120785,
+        "rouge_score": 0.3157894736842105
+      }
+    }
+  ],
+  "aggregate": {
+    "bleu_score": {
+      "mean": 0.155,
+      "min": 0.019,
+      "max": 0.595,
+      "count": 7
+    },
+    "context_precision": {
+      "mean": 0.869,
+      "min": 0.5,
+      "max": 1.0,
+      "count": 7
+    },
+    "faithfulness": {
+      "mean": 0.714,
+      "min": 0.0,
+      "max": 1.0,
+      "count": 7
+    },
+    "response_relevancy": {
+      "mean": 0.87,
+      "min": 0.553,
+      "max": 1.0,
+      "count": 7
+    },
+    "rouge_score": {
+      "mean": 0.335,
+      "min": 0.113,
+      "max": 0.612,
+      "count": 7
+    }
+  }
+}

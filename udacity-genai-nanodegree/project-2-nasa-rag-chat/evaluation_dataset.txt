@@ -1,0 +1,44 @@
+# NASA Mission Intelligence - Evaluation Dataset
+#
+# Used by: python ragas_evaluator.py --dataset evaluation_dataset.txt
+#
+# Format: one block per question, blocks separated by a blank line.
+#   CATEGORY: overview | emergency | disaster analysis | crew | technical | timeline
+#   MISSION:  apollo_11 | apollo_13 | challenger | all   (restricts retrieval to that mission)
+#   QUESTION: the question sent to the RAG system
+#   EXPECTED: the answer we expect the system to give (used for BLEU and ROUGE)
+
+CATEGORY: overview
+MISSION: apollo_11
+QUESTION: What was the main goal of the Apollo 11 mission?
+EXPECTED: Apollo 11's goal was to land astronauts on the Moon and return them safely to Earth. Neil Armstrong and Buzz Aldrin landed on the Moon on July 20, 1969, while Michael Collins stayed in lunar orbit in the command module.
+
+CATEGORY: emergency
+MISSION: apollo_13
+QUESTION: What emergency happened during the Apollo 13 mission?
+EXPECTED: About 56 hours into the flight, an oxygen tank in the service module exploded, causing a loss of oxygen and electrical power. The Moon landing was cancelled and the crew used the lunar module Aquarius as a lifeboat to return safely to Earth.
+
+CATEGORY: disaster analysis
+MISSION: challenger
+QUESTION: What caused the Space Shuttle Challenger disaster?
+EXPECTED: The O-ring seals in a joint of the right solid rocket booster failed, made worse by unusually cold temperatures at launch. Hot gas escaped through the joint and the vehicle broke apart about 73 seconds after liftoff on January 28, 1986.
+
+CATEGORY: crew
+MISSION: apollo_13
+QUESTION: Who were the crew members of Apollo 13?
+EXPECTED: The Apollo 13 crew was Commander Jim Lovell, Command Module Pilot Jack Swigert, and Lunar Module Pilot Fred Haise.
+
+CATEGORY: technical
+MISSION: apollo_13
+QUESTION: How did the Apollo 13 crew deal with rising carbon dioxide levels in the lunar module?
+EXPECTED: Mission Control designed a way to fit the command module's square lithium hydroxide canisters into the lunar module's system using materials on board such as tape, plastic bags and cardboard, which brought carbon dioxide levels back down.
+
+CATEGORY: timeline
+MISSION: apollo_11
+QUESTION: When did Apollo 11 land on the Moon, and when did Neil Armstrong step onto the surface?
+EXPECTED: The lunar module Eagle landed on July 20, 1969, and Neil Armstrong stepped onto the lunar surface about six and a half hours after landing.
+
+CATEGORY: timeline
+MISSION: challenger
+QUESTION: How long after liftoff did the Challenger vehicle break apart?
+EXPECTED: The Challenger vehicle broke apart about 73 seconds after liftoff.
